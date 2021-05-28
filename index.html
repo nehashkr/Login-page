@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDM Card</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+
+<body>
+
+    <div class="card-wrapper">
+        <div class="card-main">
+            <div class="card-item left">
+                <h2>Welecome to MDM</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi blanditiis illum quos pariatur sint
+                    itaque doloremque mollitia totam atque repudiandae voluptate hic, maxime explicabo ea quaerat sed
+                    corrupti repellendus odio!</p>
+                <button>Know more</button>
+            </div>
+            <div class="card-item right">
+                <h2>Signin</h2>
+                <div class="form-wrapper">
+                    <form action="">
+                        <div class="mb-3">
+                            <input type="text" class="" placeholder="Enter Username" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="" placeholder="Enter Password" required id="pw">
+                            <span class="eye" style="margin-top: 15px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-eye-fill" viewBox="0 0 16 16" aria-hidden="true" onclick="toggle()"
+                                    id="hide1">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                    <path
+                                        d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-eye-slash-fill" viewBox="0 0 16 16" aria-hidden="true"
+                                    onclick="toggle()" id="hide2">
+                                    <path
+                                        d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z" />
+                                    <path
+                                        d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z" />
+                                </svg>
+
+                            </span>
+                        </div>
+                        <button type="submit" onclick="clickbtn()">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jqeury && BS javascript --
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+    <script src="./index.js"></script>
+</body>
+
+</html>
